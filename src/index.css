@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Global settings */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f5f5f9;
+}
+
+/* Navbar.css */
+.navbar .nav-link,
+.navbar .dropdown-toggle,
+.navbar .disabled,
+.navbar .btn-outline-light {
+  color: white !important;
+}
+
+.navbar{
+  position: fixed;
+  z-index: 1100;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navbar .btn-outline-light:hover {
+  color: black !important;
+  background-color: white !important;
+}
+
+.register{
+  background-color: rgb(218, 156, 43);
+  border-radius: 10px;
+  text-align: center;
+}
+.login{
+  border-radius: 10px;
+}
+.navbar-nav{
+  display: flex;
+  gap: 5px;
+}
+.bi-list{
+  font-size: 30px;
+  cursor: pointer;
+ border-radius: 10px;
+ color: orange;
+
+}
+.nav_img img{
+  width: 100px;
+}
+.nouser_img img{
+  width: 100px;
+}
+.swal2-container {
+  z-index: 20000 !important;
+}
+/* register css */
+.btn-register{
+  background-color: rgb(224, 160, 39);
+  border: none;
+  border-radius: 10px;
+  width: 250px;
+}
+.btn_reg{
+  border: 1px solid rgb(224, 160, 39);
+}
+.btn_reg:hover{
+  background-color: rgb(224, 160, 39);
+}
+.register_container {
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 800px; /* Adjusted to fit better on larger screens */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-top: 100px;
+  margin-left: auto; /* Center the container */
+  margin-right: auto; /* Center the container */
+}
+
+
+.reg_word{
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+/* loginform css */
+.loginForm {
+  border: 1px solid #ccc;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 20px; 
+  margin-top: 150px;
+}
+
+.login_btn{
+  background-color: orange;
+}
+
+.grow_img img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  display: flex;
+  height: 100vh;
+}
+
+
+.sides {
+  width: 250px; /* Set the default width for the sidebar */
+  background-color:#fff;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Start off-screen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 15px;
+  transition: left 0.3s;
+  border-right: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.sides.show {
+  left: 20px; /* Slide into view */
+}
+.sides{
+  left: -300px;
+}
+
+.routes {
+  flex: 1;
+  padding: 20px;
+  margin-top: 45px;
+  width:100%;
+}
+.btn-register{
+  background-color: rgb(224, 160, 39);
+  border: none;
+  border-radius: 10px;
+}
+.pro_btns{
+  display: flex;
+  
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidelists {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidelists .side_list {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: flex-start;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.activeLink {
+  background-color: #008000;
+  border-radius: 10px;
+}
+
+.sublink:hover {
+  background-color: #008000;
+}
+
+.logout {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top: 1px solid #ddd;
+  width: 100%;
+}
+
+.logout li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+ul li .Link {
+  text-decoration: none;
+}
+.Links{
+  text-decoration: none;
+}
+
+ul li i {
+  margin-right: 10px;
+}
+
+ul li p {
+  margin: 0;
+}
+.span{
+align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.span i{
+  font-size: 25px;
+}
+
+/* modal css */
+.custom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow-y: scroll;
+}
+
+.custom-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 700px;
+}
+
+.custom-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.custom-modal-title {
+  margin: 0;
+}
+
+.custom-modal-body {
+  padding: 10px 0;
+}
+
+.close {
+  background: none;
+  border: 1px solid orange;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 70px;
+}
+.edit_form{
+  margin-top: 100px;
+}
+label{
+  font-weight: bold;
+}
+
+.bt:disabled{
+  background-color: rgb(245, 226, 190);
+}
+.bool{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.label_form{
+  display: flex;
+  flex-direction: column;
+}
+.label_form label{
+  width: 100%;
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .sides.show {
+    left: -300px; /* Start off-screen */
+  }
+  .sides {
+    left: 0; /* Slide into view */
+  }
+  .edit_form{
+    margin-top: 380px;
+  }
+  .edit_btns{
+    display: flex;
+  }
+}
+
+/* more */
+.container{
+  background-color: #fff;
+  margin-left: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.finish{
+  margin-top: 100px;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid green;
+  border-radius: 10px;
+}
+.finish span{
+  margin: 0 auto;
+  width:400px
+}
+  @media (max-width: 768px) {
+    .register_container {
+      width: 100%; /* Adjust width for smaller screens */
+    }
+    .loginForm {
+      border: 1px solid #ccc;
+      width:100%;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+      padding: 20px; 
+      margin-top: 150px;
+    }
+    .container{
+      width: 350px;
+      margin-left: -50px;
+    }
+    .buss{
+      margin-top: 200px;
+    }
+    .finish{
+      width: 100%;
+        }
+        .finish span{
+          margin: 0 auto;
+        width:100%
+        }
+  }
