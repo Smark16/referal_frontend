@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-const post_back = 'http://127.0.0.1:8000/referal/post_basics'
+const post_back = 'https://referal-backend.onrender.com/referal/post_basics'
 import { useNavigate } from 'react-router-dom';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';

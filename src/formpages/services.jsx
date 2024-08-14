@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../Context/AuthContext';
 
-const post_back = 'http://127.0.0.1:8000/referal/post_services';
-const modules = 'http://127.0.0.1:8000/referal/modules';
+const post_back = 'https://referal-backend.onrender.com/referal/post_services';
+const modules = 'https://referal-backend.onrender.com/referal/modules';
 
 function Services() {
     const { user } = useContext(AuthContext);

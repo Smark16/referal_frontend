@@ -4,7 +4,7 @@ import { jwtDecode } from 'jwt-decode';
 import Swal from 'sweetalert2';
 import axios from 'axios';
 
-const loginurl = 'https://wep-backend.onrender.com/webform/';
+const loginurl = '/wep/webform/';
 
 export const AuthContext = createContext();
 
