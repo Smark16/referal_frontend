@@ -9,7 +9,7 @@ export default defineConfig({
       '/wep': {
         target: 'https://wep-backend.onrender.com',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
+        rewrite: (path) => path.replace(/^\/wep/, ''),
       },
     },
   },
